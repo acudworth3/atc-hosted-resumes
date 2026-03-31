@@ -21,7 +21,13 @@
 
 - [x] Parse -> 📚 parse the command lines
 
+```sh
+pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
+```
+
 #### pdflatex
+
+#### pdftotext
 
 ### Resume
 
@@ -36,15 +42,21 @@
 #### Extending this
 
 - [ ] Task -> 🗒️ how to include meta data
-- [ ] Task -> 🗒️ write a test to detect > 1 page
+- [ ] Task -> 🗒️ write a test to detect > 1 page `pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'`
 
 - [ ] Task -> 🗒️ extend the make file
 - [ ] Task -> 🗒️ host cvs with github pages
 
+- `generate.py` is where you would add templates
+
 ### Files Parsing
 
 - [x] Read -> 📖 MAKEFILE
-- [ ] Read -> 📖 read the scripts
+- [x] Read -> 📖 generate.py
+- [x] Read -> 📖 test_data_completeness.py
+- [x] Read -> 📖 generate_ats.py
+- [x] Read -> 📖 read the scripts
+
 - [ ] Learn -> ❔ understand the tempaltes
 - [ ] Read -> 📖 cv-build.yml
 - [ ] Read -> 📖 https://github.com/acudworth3/resume-experiment/blob/main/docs/CONTENT_GUIDE.md
