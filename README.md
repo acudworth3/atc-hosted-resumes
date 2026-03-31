@@ -31,6 +31,7 @@ graph LR
 ```
 
 **The Right Approach:**
+
 - AI writes structured data (YAML facts)
 - YOU control the pipeline and output
 - Consistent quality across all variants
@@ -69,6 +70,7 @@ git push
 ### 4. Get Your CVs
 
 GitHub Actions will automatically:
+
 - Generate 3 CV variants
 - Run tests to verify all data is included
 - Create a release with PDF downloads
@@ -80,6 +82,7 @@ Download from: `https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest`
 ### 📄 Multiple CV Formats
 
 **Three psychologically-optimized PDF variants**:
+
 - **Software Developer** - Creativity, problem-solving, technical expertise (Purple - innovation)
 - **DevOps Engineer** - Collaboration, automation, developer enablement (Orange - energy & approachability)
 - **Cloud Engineer** - Trust, scalability, expertise (Blue - professionalism)
@@ -128,6 +131,7 @@ This template now includes extensive guides to help you:
 ## Data Structure
 
 ### personal.yaml
+
 Basic contact information and taglines for each variant:
 
 ```yaml
@@ -143,6 +147,7 @@ taglines:
 ```
 
 ### experience.yaml
+
 Work experience with tags for filtering:
 
 ```yaml
@@ -151,19 +156,21 @@ Work experience with tags for filtering:
   location: "Remote"
   start_date: "01/2022"
   end_date: "present"
-  tags: ["technical", "platform", "leadership"]  # Used for filtering!
+  tags: ["technical", "platform", "leadership"] # Used for filtering!
   achievements:
     - "Led development of microservices architecture"
     - "Improved deployment efficiency by 60%"
 ```
 
 **Tag guide**:
+
 - `development` - Appears in Software Developer CV
 - `devops` - Appears in DevOps Engineer CV
 - `cloud` - Appears in Cloud Engineer CV
 - Mix tags to appear in multiple variants
 
 ### Other files
+
 - `skills.yaml` - Programming languages, tools, cloud platforms
 - `education.yaml` - Degrees and institutions
 - `certifications.yaml` - Professional certifications with tags
@@ -185,6 +192,7 @@ Work experience with tags for filtering:
 Edit templates in `templates/*/template.tex.j2` - each uses AltaCV LaTeX class with customizable colors.
 
 **Current color schemes** (based on color psychology research):
+
 - **Software Developer**: Purple (#7C3AED) - Innovation, creativity, problem-solving
 - **DevOps Engineer**: Orange (#FF6B35) - Energy, collaboration, developer enablement
 - **Cloud Engineer**: Steel Blue (#4682B4) - Trust, reliability, professionalism
@@ -220,12 +228,15 @@ ls output/ats/*.txt
 ```
 
 **When to use each format:**
+
 - **PDF versions**: Networking, direct emails, portfolios, after passing ATS
 - **TXT versions**: Online application forms, company career portals
 
 ## Requirements
 
 - Python 3.11+
+- texlive-latex-extra
+- texlive-fonts-extra
 - TeX Live (pdflatex)
 - poppler-utils (pdftotext, pdfinfo)
 
@@ -249,6 +260,7 @@ sequenceDiagram
 ```
 
 **Key Steps:**
+
 1. Load YAML data from `data/` directory
 2. Python validates and escapes special characters
 3. Direct Python string building generates LaTeX (no templates)
@@ -261,6 +273,7 @@ sequenceDiagram
 ### PDFs not generating locally?
 
 Check dependencies:
+
 ```bash
 # Python packages
 pip list | grep PyYAML
@@ -275,11 +288,13 @@ pdftotext -v
 ### Tests failing?
 
 Run verbose test output:
+
 ```bash
 python scripts/test_data_completeness.py
 ```
 
 Common issues:
+
 - Missing data in YAML files
 - Special characters in LaTeX (use `\&` for `&`, `\%` for `%`)
 - Tags not matching template filters
@@ -287,6 +302,7 @@ Common issues:
 ### GitHub Actions failing?
 
 Check:
+
 1. YAML syntax is valid
 2. No special characters breaking LaTeX compilation
 3. All required files present in repository
@@ -296,11 +312,13 @@ Check:
 The color schemes for each CV variant are based on research in color psychology and professional perception:
 
 **Research Sources:**
+
 - [Resume Color Psychology - Standout CV](https://standout-cv.com/usa/resume-advice/resume-color-psychology) - How colors influence hiring manager perception
 - [Color Psychology in Resume Design](https://www.stopthebleedday.org/2024/02/14/color-psychology-in-resume-design-using-color-to-influence-perception/) - Color impact on first impressions
 - [Colors on Your Resume - Resume Giants](https://www.resumegiants.com/blog/colors-on-resume/) - Professional color choices and their meanings
 
 **Key Findings:**
+
 - **Purple (#7C3AED)**: Associated with creativity, innovation, and problem-solving - ideal for Software Developers
 - **Orange (#FF6B35)**: Conveys energy, warmth, and collaboration - perfect for DevOps Engineers focused on developer experience
 - **Blue (#4682B4)**: Represents trust, reliability, and professionalism - suited for Cloud Engineers
@@ -319,6 +337,7 @@ MIT - Use this template freely for your own CV!
 4. **Practice tailoring** with the [Tailoring Guide](docs/TAILORING_GUIDE.md)
 
 **Writing cover letters?**
+
 - Check out the [Cover Letter Guide](docs/COVER_LETTER_GUIDE.md)
 - Use `data/cover-letter-template.yaml` as a starting structure
 
