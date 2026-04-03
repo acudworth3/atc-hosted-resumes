@@ -165,13 +165,6 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
         if strength != strengths[3]:
             latex += "\\divider\n\n"
 
-    # Expertise
-    latex += "\\cvsection{Expertise}\n\n"
-    latex += "\\cvtag{Leadership}\n"
-    latex += "\\cvtag{Strategy}\n"
-    latex += "\\cvtag{Team Building}\n\n"
-    latex += "\\divider\\medskip\n\n"
-
     # Programming Languages (first 6)
     for skill in skills['Programming Languages'][:6]:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
@@ -313,14 +306,8 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     for skill in skills['DevOps and Cloud Technologies']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
-    latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\cvtag{Content Creation}\n"
-    latex += "\\cvtag{Public Speaking}\n"
-    latex += "\\cvtag{Community Building}\n"
-    latex += "\\cvtag{Technical Writing}\n\n"
-
     # Education
-    latex += "\\cvsection{Education}\n\n"
+    latex += "\n\\cvsection{Education}\n\n"
     for edu in education:
         degree = escape_latex(edu['degree'])
         if edu.get('specialization'):
