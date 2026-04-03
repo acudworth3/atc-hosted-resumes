@@ -144,13 +144,13 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
-    # Professional Experience (first 6)
+    # Professional Experience
     latex += "\\cvsection{Professional Experience}\n\n"
-    for job in experience[:3]:
+    for job in experience:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:2]:
+        for achievement in job["achievements"]:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
@@ -286,11 +286,11 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
 
     # Community & Experience
     latex += "\\cvsection{Community \\& Experience}\n\n"
-    for job in experience[:3]:
+    for job in experience:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:2]:
+        for achievement in job["achievements"]:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
@@ -425,11 +425,11 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     # Infrastructure Experience
     latex += "\\cvsection{Infrastructure Experience}\n\n"
-    for job in experience[:3]:
+    for job in experience:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         latex += "\\begin{itemize}\n"
-        for achievement in job["achievements"][:2]:
+        for achievement in job["achievements"]:
             latex += f"\\item {escape_latex(achievement)}\n"
         latex += "\\end{itemize}\n\n"
         latex += "\\divider\n\n"
