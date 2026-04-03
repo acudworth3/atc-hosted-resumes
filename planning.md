@@ -35,10 +35,10 @@ pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
 ### Resume
 
 - [x] Task -> 🗒️ figure out website display/removal
-- [ ] Task -> 🗒️ in general need to adjust for multi line issues
+- [x] Task -> 🗒️ in general need to adjust for multi line issues
 
-- [ ] Task -> 🗒️ update certifications.yaml
-- [ ] Task -> 🗒️ update experience.yaml
+- [x] Task -> 🗒️ update certifications.yaml
+- [x] Task -> 🗒️ update experience.yaml
 - [ ] Task -> 🗒️ update skills.yaml
 - [ ] Task -> 🗒️ update strength.yaml
 
