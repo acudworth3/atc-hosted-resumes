@@ -18,6 +18,7 @@
 #### LaTeX
 
 - [ ] Learn -> ❔ learn the basics
+- [ ] Task -> 🗒️ bring in an overleaf resume and adapt it
 
 #### pdfinfo
 
@@ -33,7 +34,7 @@ pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
 
 ### Resume
 
-- [ ] Task -> 🗒️ figure out website display/removal
+- [x] Task -> 🗒️ figure out website display/removal
 - [ ] Task -> 🗒️ in general need to adjust for multi line issues
 
 - [ ] Task -> 🗒️ update certifications.yaml
