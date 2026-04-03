@@ -165,6 +165,8 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
         if strength != strengths[3]:
             latex += "\\divider\n\n"
 
+    latex += "\\cvsection{Technical Stack}\n\n"
+    # TODO: remove hardcoded limits?
     # Programming Languages (first 6)
     for skill in skills['Programming Languages'][:6]:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
