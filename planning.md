@@ -36,19 +36,20 @@ pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
 
 - [x] Task -> 🗒️ figure out website display/removal
 - [x] Task -> 🗒️ in general need to adjust for multi line issues
-
 - [x] Task -> 🗒️ update certifications.yaml
-- [x] Task -> 🗒️ update experience.yaml
 - [ ] Task -> 🗒️ update skills.yaml
+
+- [ ] Task -> 🗒️ update experience.yaml
 - [ ] Task -> 🗒️ update strength.yaml
 
 #### Extending this
 
 - [ ] Task -> 🗒️ how to include meta data
-- [ ] Task -> 🗒️ write a test to detect > 1 page `pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'`
+- [x] Task -> 🗒️ write a test to detect > 1 page `pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'`
 
 - [ ] Task -> 🗒️ extend the make file
 - [ ] Task -> 🗒️ host cvs with github pages
+- [ ] Task -> 🗒️ paramaterize the section headers
 
 - `generate.py` is where you would add templates
 
@@ -68,7 +69,7 @@ pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
 
 - [ ] Task -> 🗒️ develop strategy
 - [x] Task -> 🗒️ fix github cli issue
-- [ ] Task -> 🗒️ fix atuin
+- [x] Task -> 🗒️ fix atuin
 
 ## Issues + Updates
 
