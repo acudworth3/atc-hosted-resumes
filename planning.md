@@ -19,6 +19,9 @@
 - [ ] Task -> 🗒️ host cvs with github pages
 - [ ] Task -> 🗒️ Add custom domain
 
+- [ ] Task -> 🗒️ clean up publish workflow - Rename things
+- [ ] Task -> 🗒️ clean up publish workflow - limit branch deployments
+
 ### Resume
 
 - [ ] Task -> 🗒️ bring in an overleaf template and adapt it
