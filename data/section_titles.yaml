@@ -1,0 +1,23 @@
+software-developer:
+  column_1_row_0: "Leadership Profile"
+  column_1_row_1: "Professional Experience"
+  column_2_row_0: "Core Strengths"
+  column_2_row_1: "Technical Stack"
+  column_2_row_2: "Education"
+  column_3_row_3: "Certifications"
+
+devops-engineer:
+  column_1_row_0: "About Me"
+  column_1_row_1: "Community & Experience"
+  column_2_row_0: "What I Bring"
+  column_2_row_1: "Tech Stack"
+  column_2_row_2: "Education"
+  column_3_row_3: "Certifications"
+
+cloud-engineer:
+  column_1_row_0: "Technical Profile"
+  column_1_row_1: "Infrastructure Experience"
+  column_2_row_0: "Core Competencies"
+  column_2_row_1: "Technical Stack"
+  column_2_row_2: "Education"
+  column_3_row_3: "Certifications"

@@ -30,7 +30,7 @@ def escape_latex(text: str) -> str:
 def load_yaml_data(data_dir: Path) -> Dict[str, Any]:
     """Load all YAML files with validation."""
     data = {}
-    required_files = ['personal', 'experience', 'skills', 'strengths', 'education', 'certifications']
+    required_files = ['personal', 'experience', 'skills', 'strengths', 'education', 'certifications', 'section_titles']
 
     for yaml_file in data_dir.glob('*.yaml'):
         with open(yaml_file) as f:
@@ -54,6 +54,12 @@ def load_yaml_data(data_dir: Path) -> Dict[str, Any]:
     if missing_taglines:
         raise ValueError(f"Missing taglines in personal.yaml: {', '.join(missing_taglines)}")
 
+    # Validate section_titles exist for all variants
+    section_titles = data['section_titles']
+    missing_sections = [t for t in required_taglines if t not in section_titles]
+    if missing_sections:
+        raise ValueError(f"Missing section titles for variants in section_titles.yaml: {', '.join(missing_sections)}")
+
     return data
 
 def generate_software_developer(data: Dict[str, Any]) -> str:
@@ -64,6 +70,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     strengths = data['strengths']
     education = data['education']
     certifications = data['certifications']
+    section_titles = data['section_titles']['software-developer']
 
     # Build LaTeX directly
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
@@ -139,13 +146,13 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     latex += "\\begin{paracol}{2}\n\n"
 
     # Leadership Profile (first strength)
-    latex += "\\cvsection{Leadership Profile}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
     # Professional Experience
-    latex += "\\cvsection{Professional Experience}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_1'])}}}\n\n"
     for job in experience:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
@@ -160,13 +167,13 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     latex += "\\switchcolumn\n\n"
 
     # Core Strengths (strengths 1-4, skip first as it's in Leadership Profile)
-    latex += "\\cvsection{Core Strengths}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
     for strength in strengths[:4]:
         latex += f"\\cvachievement{{\\faTrophy}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
         if strength != strengths[3]:
             latex += "\\divider\n\n"
 
-    latex += "\\cvsection{Technical Stack}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
     # TODO: remove hardcoded limits?
     # Programming Languages (first 6)
     for skill in skills['Programming Languages'][:6]:
@@ -178,7 +185,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
-    latex += "\n\\cvsection{Education}\n\n"
+    latex += f"\n\\cvsection{{{escape_latex(section_titles['column_2_row_2'])}}}\n\n"
     for edu in education:
         degree = escape_latex(edu['degree'])
         if edu.get('specialization'):
@@ -187,7 +194,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
         latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
 
     # Certifications
-    latex += "\\cvsection{Certifications}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_3_row_3'])}}}\n\n"
     for cert in certifications[:4]:
         latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
 
@@ -205,6 +212,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     strengths = data['strengths']
     education = data['education']
     certifications = data['certifications']
+    section_titles = data['section_titles']['devops-engineer']
 
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
@@ -276,12 +284,12 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     latex += "\\begin{paracol}{2}\n\n"
 
     # About Me
-    latex += "\\cvsection{About Me}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
     # Community & Experience
-    latex += "\\cvsection{Community \\& Experience}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_1'])}}}\n\n"
     for job in experience:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
@@ -295,14 +303,14 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     latex += "\\switchcolumn\n\n"
 
     # What I Bring (first 3 strengths)
-    latex += "\\cvsection{What I Bring}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
     for strength in strengths[:3]:
         latex += f"\\cvachievement{{\\faHeart}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
         if strength != strengths[2]:
             latex += "\\divider\n\n"
 
     # Tech Stack
-    latex += "\\cvsection{Tech Stack}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
     for skill in skills['Programming Languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
     latex += "\n\\divider\\smallskip\n\n"
@@ -311,7 +319,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
-    latex += "\n\\cvsection{Education}\n\n"
+    latex += f"\n\\cvsection{{{escape_latex(section_titles['column_2_row_2'])}}}\n\n"
     for edu in education:
         degree = escape_latex(edu['degree'])
         if edu.get('specialization'):
@@ -320,7 +328,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
         latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
 
     # Certifications (first 5)
-    latex += "\\cvsection{Certifications}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_3_row_3'])}}}\n\n"
     for cert in certifications[:4]:
         latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
 
@@ -337,6 +345,7 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     strengths = data['strengths']
     education = data['education']
     certifications = data['certifications']
+    section_titles = data['section_titles']['cloud-engineer']
 
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
@@ -410,12 +419,12 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     latex += "\\begin{paracol}{2}\n\n"
 
     # Technical Profile
-    latex += "\\cvsection{Technical Profile}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
     # Infrastructure Experience
-    latex += "\\cvsection{Infrastructure Experience}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_1'])}}}\n\n"
     for job in experience:
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
@@ -429,14 +438,14 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     latex += "\\switchcolumn\n\n"
 
     # Core Competencies (first 4 strengths)
-    latex += "\\cvsection{Core Competencies}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
     for strength in strengths[:3]:
         latex += f"\\cvachievement{{\\faCogs}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
         if strength != strengths[3]:
             latex += "\\divider\n\n"
 
     # Technical Stack
-    latex += "\\cvsection{Technical Stack}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
     # TODO: generate these generically from keys?
     latex += "\\textbf{Languages}\n\n"
     for skill in skills['Programming Languages']:
@@ -453,14 +462,14 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
-    latex += "\n\\cvsection{Education}\n\n"
+    latex += f"\n\\cvsection{{{escape_latex(section_titles['column_2_row_2'])}}}\n\n"
     for edu in education:
         degree = escape_latex(edu['degree'])
         latex += f"\\cvevent{{{degree}}}{{{escape_latex(edu['institution'])}}}"
         latex += f"{{{edu['start_date']}--{edu['end_date']}}}{{{escape_latex(edu['location'])}}}\n\n"
 
     # Certifications
-    latex += "\\cvsection{Certifications}\n\n"
+    latex += f"\\cvsection{{{escape_latex(section_titles['column_3_row_3'])}}}\n\n"
     for cert in certifications[:4]:
         latex += f"\\cvtag{{{escape_latex(cert['name'])}}}\n"
 
