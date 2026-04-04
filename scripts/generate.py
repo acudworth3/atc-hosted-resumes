@@ -153,7 +153,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
 
     # Professional Experience
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_1'])}}}\n\n"
-    for job in experience:
+    for i, job in enumerate(experience):
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         if job.get("achievements"):
@@ -161,7 +161,8 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
             for achievement in job["achievements"]:
                 latex += f"\\item {escape_latex(achievement)}\n"
             latex += "\\end{itemize}\n\n"
-        latex += "\\divider\n\n"
+        if i < len(experience) - 1:
+            latex += "\\divider\n\n"
 
     # Switch to sidebar
     latex += "\\switchcolumn\n\n"
@@ -290,7 +291,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
 
     # Community & Experience
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_1'])}}}\n\n"
-    for job in experience:
+    for i, job in enumerate(experience):
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         if job.get("achievements"):
@@ -298,7 +299,8 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
             for achievement in job["achievements"]:
                 latex += f"\\item {escape_latex(achievement)}\n"
             latex += "\\end{itemize}\n\n"
-        latex += "\\divider\n\n"
+        if i < len(experience) - 1:
+            latex += "\\divider\n\n"
 
     latex += "\\switchcolumn\n\n"
 
@@ -425,7 +427,7 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     # Infrastructure Experience
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_1'])}}}\n\n"
-    for job in experience:
+    for i, job in enumerate(experience):
         latex += f"\\cvevent{{{escape_latex(job['title'])}}}{{{escape_latex(job['company'])}}}"
         latex += f"{{{job['start_date']}--{job['end_date']}}}{{{escape_latex(job['location'])}}}\n"
         if job.get("achievements"):
@@ -433,7 +435,8 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
             for achievement in job["achievements"]:
                 latex += f"\\item {escape_latex(achievement)}\n"
             latex += "\\end{itemize}\n\n"
-        latex += "\\divider\n\n"
+        if i < len(experience) - 1:
+            latex += "\\divider\n\n"
 
     latex += "\\switchcolumn\n\n"
 
