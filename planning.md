@@ -9,11 +9,15 @@
 
 ### Publishing
 
-- [ ] Task -> 🗒️ host cvs with github pages
 - [ ] Task -> 🗒️ rewrite readme
+- [ ] Task -> 🗒️ rename repo
 - [ ] Task -> 🗒️ share to
-
 - [ ] Learn -> ❔see if you can generate word docs
+
+#### Github Pages
+
+- [ ] Task -> 🗒️ host cvs with github pages
+- [ ] Task -> 🗒️ Add custom domain
 
 ### Resume
 
