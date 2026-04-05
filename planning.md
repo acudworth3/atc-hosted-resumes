@@ -10,13 +10,11 @@
 ### Publishing
 
 - [ ] Task -> 🗒️ rewrite readme
-- [ ] Task -> 🗒️ rename repo
+- [x] Task -> 🗒️ rename repo
 - [ ] Task -> 🗒️ share to cloud native corner
 - [ ] Learn -> ❔see if you can generate word docs
 
 #### Github Pages
-
-> test
 
 - [x] Task -> 🗒️ host cvs with github pages
 - [x] Task -> 🗒️ ~Add custom domain~
@@ -32,7 +30,7 @@
 
 #### Extending this
 
-- [ ] Task -> 🗒️ extend the make file
+- [x] Task -> 🗒️ extend the make file
 
 ### LaTeX Katas
 
