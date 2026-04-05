@@ -1,4 +1,4 @@
-.PHONY: all clean help test software-developer devops-engineer cloud-engineer ats ats-all
+.PHONY: all clean help test publish software-developer devops-engineer cloud-engineer ats ats-all
 
 VARIANTS = software-developer devops-engineer cloud-engineer
 DATA_DIR = data
@@ -23,6 +23,7 @@ help:
 	@echo "  cloud-engineer       - Build Cloud Engineer CV"
 	@echo "  ats-all              - Generate all ATS-friendly text versions"
 	@echo "  test                 - Verify all YAML data is rendered in PDFs"
+	@echo "  publish              - Publish resumes via GitHub workflow"
 	@echo "  clean                - Remove all generated files"
 	@echo "  help                 - Show this help message"
 	@echo ""
@@ -83,6 +84,12 @@ ats-all: $(foreach v,$(VARIANTS),$(ATS_OUTPUT_DIR)/$(v).txt)
 	@echo ""
 	@echo "Generated files:"
 	@ls -lh $(ATS_OUTPUT_DIR)/*.txt
+
+# Publish resumes via GitHub workflow
+publish:
+	@echo "==> Triggering publish-resumes workflow..."
+	gh workflow run publish-resumes -r $(shell git branch --show-current)
+	@echo "✓ Workflow triggered"
 
 # Clean all generated files
 clean:
