@@ -1,5 +1,9 @@
 # References
 
+## Deployment
+
+- run `gh workflow run publish-resumes  -r $(git branch --show-current)` to generate
+
 ## Template Notes
 
 - [ ] Task -> 🗒️ understand altacv

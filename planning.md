@@ -16,7 +16,7 @@
 
 #### Github Pages
 
-- [ ] Task -> 🗒️ host cvs with github pages
+- [x] Task -> 🗒️ host cvs with github pages
 - [ ] Task -> 🗒️ Add custom domain
 
 - [ ] Task -> 🗒️ clean up publish workflow - Rename things
