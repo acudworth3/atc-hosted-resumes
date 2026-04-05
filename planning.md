@@ -16,6 +16,8 @@
 
 #### Github Pages
 
+> test
+
 - [x] Task -> 🗒️ host cvs with github pages
 - [x] Task -> 🗒️ ~Add custom domain~
 
