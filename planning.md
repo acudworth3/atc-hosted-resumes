@@ -11,17 +11,17 @@
 
 - [ ] Task -> 🗒️ rewrite readme
 - [ ] Task -> 🗒️ rename repo
-- [ ] Task -> 🗒️ share to
+- [ ] Task -> 🗒️ share to cloud native corner
 - [ ] Learn -> ❔see if you can generate word docs
 
 #### Github Pages
 
 - [x] Task -> 🗒️ host cvs with github pages
-- [ ] Task -> 🗒️ Add custom domain
+- [x] Task -> 🗒️ ~Add custom domain~
 
 - [x] Task -> 🗒️ clean up publish workflow - Rename things
-- [ ] Task -> 🗒️ clean up publish workflow - limit branch deployments
-- [ ] Task -> 🗒️ Add a publish command to the makefile
+- [x] Task -> 🗒️ clean up publish workflow - limit branch deployments
+- [x] Task -> 🗒️ Add a publish command to the makefile
 
 ### Resume
 
