@@ -4,6 +4,7 @@ VARIANTS = software-developer devops-engineer cloud-engineer
 DATA_DIR = data
 TEMPLATE_DIR = templates
 OUTPUT_DIR = output/generated
+PUBLISH_DIR = publish
 ATS_OUTPUT_DIR = output/ats
 PYTHON = python3
 
@@ -29,7 +30,7 @@ help:
 	@echo "  help                 - Show this help message"
 	@echo ""
 	@echo "Build pipeline:"
-	@echo "  PDF:  YAML -> Python -> .tex -> pdflatex -> .pdf -> test -> build"
+	@echo "  PDF:  YAML -> Python -> .tex -> pdflatex -> .pdf -> test -> build --> publish (optional)"
 	@echo "  ATS:  YAML -> Python -> .txt (plain text, ATS-optimized)"
 
 # Generate .tex from YAML - direct conversion, no templates
@@ -88,7 +89,7 @@ ats-all: $(foreach v,$(VARIANTS),$(ATS_OUTPUT_DIR)/$(v).txt)
 
 # Build and publish to publish/ directory
 build:
-	@echo "==> Publishing CVs to publish/ directory..."
+	@echo "==> Moving CVs to publish/ directory..."
 	$(PYTHON) scripts/build.py
 	@echo ""
 
@@ -103,4 +104,5 @@ clean:
 	@echo "==> Cleaning generated files..."
 	rm -rf $(OUTPUT_DIR)/*
 	rm -rf $(ATS_OUTPUT_DIR)/*
+	rm -rf $(PUBLISH_DIR)/*
 	@echo "✓ Clean complete"
