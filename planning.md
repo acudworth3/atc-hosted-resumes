@@ -4,33 +4,33 @@
 
 ## Tasking
 
-- [ ] Read -> 📖 All files
 - [ ] Task -> 🗒️ setup treesitter for LaTeX
 
 ### Publishing
 
 - [ ] Task -> 🗒️ rewrite readme
-- [x] Task -> 🗒️ rename repo
 - [ ] Task -> 🗒️ share to cloud native corner
 - [ ] Learn -> ❔see if you can generate word docs
 
-#### Github Pages
+#### Update Readme
 
-- [x] Task -> 🗒️ host cvs with github pages
-- [x] Task -> 🗒️ ~Add custom domain~
-
-- [x] Task -> 🗒️ clean up publish workflow - Rename things
-- [x] Task -> 🗒️ clean up publish workflow - limit branch deployments
-- [x] Task -> 🗒️ Add a publish command to the makefile
+- [ ] Task -> 🗒️ credit cloud native
+- [ ] Task -> 🗒️ update diagram https://github.com/acudworth3/atc-hosted-resumes/blob/chore/rewrite-readme/README.md#how-it-works
+- [ ] Task -> 🗒️ update requirenments
+- [ ] Task -> 🗒️ add section title note
+- [ ] Task -> 🗒️ slash and burn
 
 ### Resume
 
 - [ ] Task -> 🗒️ how to include meta data
 - [ ] Task -> 🗒️ bring in an overleaf template and adapt it
 
-#### Extending this
+#### ATS
 
-- [x] Task -> 🗒️ extend the make file
+- [ ] Task -> 🗒️ test formatting
+- [ ] Task -> 🗒️ review how to submit
+
+#### Extending this
 
 ### LaTeX Katas
 
@@ -45,8 +45,6 @@
 
 ### Files Parsing
 
-- [ ] Read -> 📖 https://github.com/acudworth3/resume-experiment/blob/main/docs/CONTENT_GUIDE.md
-
 ## AI Integration
 
 - [ ] Task -> 🗒️ develop strategy
@@ -55,9 +53,19 @@
 
 - [ ] Task -> 🗒️ write a generator agent
 - [ ] Task -> 🗒️ generator agent - guard rails
+- [ ] Learn -> ❔ need validation methods
 
 # Completed
 
+- [x] Read -> 📖 https://github.com/acudworth3/resume-experiment/blob/main/docs/CONTENT_GUIDE.md
+- [x] Read -> 📖 All files
+- [x] Task -> 🗒️ rename repo
+- [x] Task -> 🗒️ host cvs with github pages
+- [x] Task -> 🗒️ ~Add custom domain~
+- [x] Task -> 🗒️ clean up publish workflow - Rename things
+- [x] Task -> 🗒️ clean up publish workflow - limit branch deployments
+- [x] Task -> 🗒️ Add a publish command to the makefile
+- [x] Task -> 🗒️ extend the make file
 - [x] Learn -> ❔ understand the tempaltes
 - [x] Task -> 🗒️ update experience.yaml
 - [x] Task -> 🗒️ update strength.yaml
