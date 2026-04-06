@@ -8,14 +8,14 @@
 
 ### Publishing
 
-- [ ] Task -> 🗒️ rewrite readme
+- [x] Task -> 🗒️ rewrite readme
 - [ ] Task -> 🗒️ share to cloud native corner
 - [ ] Learn -> ❔see if you can generate word docs
 
 #### Update Readme
 
-- [ ] Task -> 🗒️ credit cloud native
-- [ ] Task -> 🗒️ update diagram https://github.com/acudworth3/atc-hosted-resumes/blob/chore/rewrite-readme/README.md#how-it-works
+- [x] Task -> 🗒️ credit cloud native
+- [x] Task -> 🗒️ update diagram https://github.com/acudworth3/atc-hosted-resumes/blob/chore/rewrite-readme/README.md#how-it-works
 - [x] Task -> 🗒️ update requirenments
 - [x] Task -> 🗒️ add section title note
 - [x] Task -> 🗒️ slash and burn
