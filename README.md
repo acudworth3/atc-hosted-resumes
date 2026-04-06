@@ -199,7 +199,7 @@ sequenceDiagram
     LaTeX->>PDF: Compile PDFs
     PDF->>Test: Validate completeness
     Test->>Test: All data present?
-    Test->>Build: Copy to publish folder
+    Test->>Build: Copy to publish folder\n build.py
     Build->>Publish: Deploy to GH Pages
 ```
 
