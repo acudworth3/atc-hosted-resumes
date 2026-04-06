@@ -51,3 +51,11 @@ pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
 
 - need to call `make ats-all` to get ATS locally
 - to run locally also requires `sudo apt install texlive-fonts-extra texlive-full`
+
+## Misc
+
+## Keep
+
+[![CV Pipeline as Code: LaTeX, YAML, and GitHub Actions](https://img.youtube.com/vi/S2gpOr-mbf4/maxresdefault.jpg)](https://youtu.be/S2gpOr-mbf4)
+
+**CV Pipeline as Code: LaTeX, YAML, and GitHub Actions** - Learn how to use this template to automate your CV generation workflow.

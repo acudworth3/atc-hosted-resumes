@@ -1,9 +1,3 @@
-## Keep
-
-[![CV Pipeline as Code: LaTeX, YAML, and GitHub Actions](https://img.youtube.com/vi/S2gpOr-mbf4/maxresdefault.jpg)](https://youtu.be/S2gpOr-mbf4)
-
-**CV Pipeline as Code: LaTeX, YAML, and GitHub Actions** - Learn how to use this template to automate your CV generation workflow.
-
 # Overview
 
 Automated CV generation pipeline that creates multiple psychologically-optimized CV variants from YAML data.
@@ -25,6 +19,7 @@ graph LR
 
     style B fill:#4a3a4a,stroke:#e599f7,stroke-width:2px
     style E fill:#3a4a3a,stroke:#94d82d,stroke-width:2px
+    style F fill:#3a4a3a,stroke:#94d82d,stroke-width:2px
 ```
 
 **The Right Approach:**
