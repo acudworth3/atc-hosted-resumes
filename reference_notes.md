@@ -59,3 +59,26 @@ pdfinfo your_cv.pdf | grep "Pages:" | awk '{print $2}'
 [![CV Pipeline as Code: LaTeX, YAML, and GitHub Actions](https://img.youtube.com/vi/S2gpOr-mbf4/maxresdefault.jpg)](https://youtu.be/S2gpOr-mbf4)
 
 **CV Pipeline as Code: LaTeX, YAML, and GitHub Actions** - Learn how to use this template to automate your CV generation workflow.
+
+## Customization
+
+### Add New Variants
+
+1. Create template directory: `templates/new-variant/`
+2. Add template file: `templates/new-variant/template.tex.j2`
+3. Add tagline to `data/personal.yaml`
+4. Tag relevant experience in `data/experience.yaml`
+5. Update `Makefile` VARIANTS list
+6. Update `.github/workflows/cv-build.yml` matrix
+
+### Modify Colors/Design
+
+Edit templates in `templates/*/template.tex.j2` - each uses AltaCV LaTeX class with customizable colors.
+
+**Current color schemes** (based on color psychology research):
+
+- **Software Developer**: Purple (#7C3AED) - Innovation, creativity, problem-solving
+- **DevOps Engineer**: Orange (#FF6B35) - Energy, collaboration, developer enablement
+- **Cloud Engineer**: Steel Blue (#4682B4) - Trust, reliability, professionalism
+
+- [ ] Task -> 🗒️ rewrite this

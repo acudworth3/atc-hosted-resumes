@@ -2,11 +2,6 @@
 
 Automated CV generation pipeline with publishing to github pages. Local generation combined with intional hosting.
 
-> [!NOTE]
-> Full credit [Piotr1215](https://github.com/Piotr1215) for most of what is in this repo. For more information on what should go into resumes, review his [template](https://github.com/Piotr1215/cv-pipeline-template) and explanation video. Additionally, he has an excellent [YouTube Channel](https://www.youtube.com/@cloud-native-corner) with a walk through of usage and many other useful topics.
-
-## Why This Approach?
-
 **The AI Trap**: Most people use AI wrong for CVs
 
 ```mermaid
@@ -22,20 +17,23 @@ graph LR
     style F fill:#3a4a3a,stroke:#94d82d,stroke-width:2px
 ```
 
-**The Right Approach:**
+> [!NOTE]
+> Full credit [Piotr1215](https://github.com/Piotr1215) for most of what is in this repo. For more information on what should go into resumes, review his [template](https://github.com/Piotr1215/cv-pipeline-template) and explanation video. Additionally, he has an excellent [YouTube Channel](https://www.youtube.com/@cloud-native-corner) with a walk through of usage and many other useful topics.
 
-- AI writes structured data (YAML facts)
-  - Job Description is parsed and understood
-  - Agent files control the language emphasis with guardrails from samples
-- Pipelines generate variants
-- Job Specific CVs can be created quickly
-- Generic resumes can be hosted intentionally via `publish.yaml`
+## Approach
 
-- [ ] Task -> 🗒️ restructure headers
+1. AI writes structured data (YAML facts)
 
-## Quick Start
+- Job Description is parsed and understood
+- Agent files control the language emphasis with guardrails from samples
 
-### 2. Edit Your Data
+2. Pipelines generate variants
+3. Job Specific CVs can be created quickly
+4. Generic resumes can be hosted intentionally via `publish.yaml`
+
+### Usage
+
+### Edit Your Data
 
 Update the YAML files in `data/` with your information:
 
@@ -50,17 +48,17 @@ vim data/experience.yaml
 vim data/skills.yaml data/education.yaml data/certifications.yaml data/strengths.yaml, data/section_titles.yaml
 ```
 
-- [ ] Task -> 🗒️ consider removing this logice
+### Get Your CVs
 
-### 4. Get Your CVs
-
-GitHub Actions will automatically:
+`make all`
 
 - Generate 3 CV variants
 - Run tests to verify all data is included
-- Create a release with PDF downloads
+- Place them in the `./output/generated/` folder
 
-Download from: `https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest`
+### Publish (Optional)
+
+`make build && make publish`
 
 ## Data Structure
 
@@ -103,29 +101,6 @@ Work experience with tags for filtering:
 - `certifications.yaml` - Professional certifications with tags
 - `strengths.yaml` - Key strengths with descriptions and tags
 - `section_titles.yaml` - Rename Sections in the resume
-
-## Customization
-
-### Add New Variants
-
-1. Create template directory: `templates/new-variant/`
-2. Add template file: `templates/new-variant/template.tex.j2`
-3. Add tagline to `data/personal.yaml`
-4. Tag relevant experience in `data/experience.yaml`
-5. Update `Makefile` VARIANTS list
-6. Update `.github/workflows/cv-build.yml` matrix
-
-### Modify Colors/Design
-
-Edit templates in `templates/*/template.tex.j2` - each uses AltaCV LaTeX class with customizable colors.
-
-**Current color schemes** (based on color psychology research):
-
-- **Software Developer**: Purple (#7C3AED) - Innovation, creativity, problem-solving
-- **DevOps Engineer**: Orange (#FF6B35) - Energy, collaboration, developer enablement
-- **Cloud Engineer**: Steel Blue (#4682B4) - Trust, reliability, professionalism
-
-- [ ] Task -> 🗒️ rewrite this
 
 ## Testing Locally
 
