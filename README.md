@@ -6,8 +6,6 @@ Automated CV generation pipeline that creates multiple psychologically-optimized
 
 **The AI Trap**: Most people use AI wrong for CVs
 
-<!-- TASK: Extend this -->
-
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"darkMode": true, "background": "#2b2b2b", "mainBkg": "#3a3a3a", "secondBkg": "#4a4a4a"}}}%%
 graph LR
@@ -178,8 +176,6 @@ ls output/ats/*.txt
 
 - gh (optional for publishing from local)
 
-- [ ] Task -> 🗒️ update
-
 ## How It Works
 
 ```mermaid
@@ -199,7 +195,7 @@ sequenceDiagram
     LaTeX->>PDF: Compile PDFs
     PDF->>Test: Validate completeness
     Test->>Test: All data present?
-    Test->>Build: Copy to publish folder<br/> build.py
+    Test->>Build: Copy to publish folder
     Build->>Publish: Deploy to GH Pages
 ```
 
@@ -210,7 +206,8 @@ sequenceDiagram
 3. Direct Python string building generates LaTeX (no templates)
 4. LaTeX compiler creates professional PDFs
 5. Test suite verifies 100% data completeness
-6. GitHub Actions automates entire workflow
+6. `build.py` copies all generated pdf so `./publish`
+7. `make publish` triggers workflow to host resumes on github pages
 
 ## Troubleshooting
 
@@ -242,14 +239,6 @@ Common issues:
 - Missing data in YAML files
 - Special characters in LaTeX (use `\&` for `&`, `\%` for `%`)
 - Tags not matching template filters
-
-### GitHub Actions failing?
-
-Check:
-
-1. YAML syntax is valid
-2. No special characters breaking LaTeX compilation
-3. All required files present in repository
 
 ## License
 
