@@ -21,6 +21,7 @@ graph LR
     A -->|✓ Right| C[YAML Data]
     C --> D[Your Pipeline]
     D --> E[Professional CV]
+    E --> F[Publish and Share]
 
     style B fill:#4a3a4a,stroke:#e599f7,stroke-width:2px
     style E fill:#3a4a3a,stroke:#94d82d,stroke-width:2px
