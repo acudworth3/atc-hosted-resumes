@@ -30,6 +30,8 @@ graph LR
 - Version controlled career narrative
 - Update once → all CVs updated automatically
 
+- [ ] Task -> 🗒️ restructure headers
+
 ## Quick Start
 
 ### 2. Edit Your Data
@@ -145,10 +147,19 @@ make test
 
 # View PDFs
 ls output/generated/*.pdf
+
+# Prepare ./publish folder to be published
+make build
+
+# Publish to github pages via ./github/workflows/publish
+## Ensure 1. gh is installed locally sudo apt install gh
+## 2. You are logged in; gh auth login
+## 3. github pages is enabled on the repo
+make publish
 ```
 
-### Generate ATS-Friendly Versions
-
+<details>
+<summary>ATS Versions</summary>
 For online job applications, generate plain text versions optimized for Applicant Tracking Systems:
 
 ```bash
@@ -160,6 +171,8 @@ python3 scripts/generate_ats.py --variant cloud-engineer --data-dir data/ --outp
 # View generated text files
 ls output/ats/*.txt
 ```
+
+</details>
 
 ## Requirements
 
