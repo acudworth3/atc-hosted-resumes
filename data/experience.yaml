@@ -33,7 +33,7 @@
   end_date: "10/2021"
   tags: ["devops", "cloud", "development"]
   achievements:
-    - "Proin quis magna tincidunt, consequat nisi non, varius nunc."
+    - "IBM Mainframe to Pivotal Cloud Foundry file transfer infrastructure Migration L2 Support"
 
 - title: "Graduate Teaching Assistant"
   company: "Georgia Tech College of Computing"
@@ -42,7 +42,7 @@
   end_date: "05/2022"
   tags: ["devops", "cloud", "development"]
   achievements:
-    - "Proin quis magna tincidunt, consequat nisi non, varius nunc."
+    - "CS 6340: Software Analysis - Office Hours, grading, course work design"
 
 - title: "Associate Product Manager"
   company: "Walmart E-Commerce"
