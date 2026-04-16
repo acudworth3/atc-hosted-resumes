@@ -145,7 +145,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     latex += "\\columnratio{0.6}\n\n"
     latex += "\\begin{paracol}{2}\n\n"
 
-    # Leadership Profile (first strength)
+    # About Me
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
@@ -167,9 +167,10 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     # Switch to sidebar
     latex += "\\switchcolumn\n\n"
 
-    # Core Strengths (strengths 1-4, skip first as it's in Leadership Profile)
+
+    # Projects (strengths 1-4, skip first as it's in About Me)
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
-    for strength in strengths[:4]:
+    for strength in strengths[1:4]:
         latex += f"\\cvachievement{{\\faTrophy}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
         if strength != strengths[3]:
             latex += "\\divider\n\n"
@@ -304,9 +305,9 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
 
     latex += "\\switchcolumn\n\n"
 
-    # What I Bring (first 3 strengths)
+    # Projects (strengths 1-4, skip first as it's in About Me)
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
-    for strength in strengths[:3]:
+    for strength in strengths[1:4]:
         latex += f"\\cvachievement{{\\faHeart}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
         if strength != strengths[2]:
             latex += "\\divider\n\n"
@@ -420,7 +421,7 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     latex += "\\columnratio{0.6}\n\n"
     latex += "\\begin{paracol}{2}\n\n"
 
-    # Technical Profile
+    # About Me
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
@@ -440,9 +441,9 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     latex += "\\switchcolumn\n\n"
 
-    # Core Competencies (first 4 strengths)
+    # Projects (strengths 1-4, skip first as it's in About Me)
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
-    for strength in strengths[:3]:
+    for strength in strengths[1:4]:
         latex += f"\\cvachievement{{\\faCogs}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
         if strength != strengths[3]:
             latex += "\\divider\n\n"
