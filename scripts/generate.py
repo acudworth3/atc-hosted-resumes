@@ -146,9 +146,9 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     latex += "\\begin{paracol}{2}\n\n"
 
     # About Me
-    # TODO: Decide if you want to utilize title or not
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
-    latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
+    # NOTE: Enable to include a title in ABOUT ME
+    # latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
 
@@ -287,7 +287,8 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     latex += "\\begin{paracol}{2}\n\n"
 
     # About Me
-    # TODO: Decide if you want to utilize title or not
+    # NOTE: Enable to include a title in ABOUT ME
+    # latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"
@@ -311,7 +312,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_0'])}}}\n\n"
     for strength in strengths[1:4]:
         latex += f"\\cvachievement{{\\faHeart}}{{{escape_latex(strength['title'])}}}{{{escape_latex(strength['description'])}}}\n\n"
-        if strength != strengths[2]:
+        if strength != strengths[-1]:
             latex += "\\divider\n\n"
 
     # Tech Stack
@@ -424,7 +425,8 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     latex += "\\begin{paracol}{2}\n\n"
 
     # About Me
-    # TODO: Decide if you want to utilize title or not
+    # NOTE: Enable to include a title in ABOUT ME
+    # latex += f"\\textbf{{{escape_latex(strengths[0]['title'])}}}\n\n"
     latex += f"\\cvsection{{{escape_latex(section_titles['column_1_row_0'])}}}\n\n"
     latex += f"{escape_latex(strengths[0]['description'])}\n\n"
     latex += "\\medskip\n\n"

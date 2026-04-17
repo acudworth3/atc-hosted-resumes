@@ -20,17 +20,20 @@
 - [x] Task -> 🗒️ add section title note
 - [x] Task -> 🗒️ slash and burn
 
-- [ ] Task -> 🗒️ Software Engineer Template - fix divider on job
-- [ ] Task -> 🗒️ Devops Engineer Template - fix divider in projects
+- [x] Task -> 🗒️ ~Software Engineer Template - fix divider on job~
+- [x] Task -> 🗒️ Devops Engineer Template - fix divider in projects
 - [ ] Task -> 🗒️ Software Engineer Template - Remove Title from About me
 - [ ] Task -> 🗒️ All - Update sub heading
 
 - [ ] Task -> 🗒️ Move Education up Higher
 
-- [ ] Task -> 🗒️ Job Description - Slalom
-- [ ] Task -> 🗒️ Job Description - AB
+- [x] Task -> 🗒️ Job Description - Slalom
+- [x] Task -> 🗒️ Job Description - AB
 - [x] Task -> 🗒️ Description - Projects
+
 - [ ] Task -> 🗒️ Description - Projects v2
+- [ ] Task -> 🗒️ Job Description - Slalom v2
+- [ ] Task -> 🗒️ Job Description - AB v2
 
 ### Resume
 
