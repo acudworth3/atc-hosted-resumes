@@ -75,7 +75,7 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
     # Build LaTeX directly
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
-\geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm,columnsep=1.5cm}
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=0.5cm}
 
 \usepackage{paracol}
 
@@ -219,7 +219,7 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
 
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
-\geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm,columnsep=1.5cm}
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=0.5cm}
 
 \usepackage{paracol}
 
@@ -355,7 +355,7 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     latex = r'''\documentclass[10pt,a4paper,withhyper]{altacv}
 
-\geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm,columnsep=1.5cm}
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=0.5cm}
 
 \usepackage{paracol}
 

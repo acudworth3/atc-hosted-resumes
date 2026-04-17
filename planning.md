@@ -9,7 +9,7 @@
 ### Publishing
 
 - [x] Task -> 🗒️ rewrite readme
-- [ ] Task -> 🗒️ share to cloud native corner
+- [x] Task -> 🗒️ share to cloud native corner
 - [ ] Learn -> ❔see if you can generate word docs
 
 #### Update Readme
@@ -49,8 +49,9 @@
 
 ### LaTeX Katas
 
-- [ ] Adjust font size of a section
-- [ ] Adjust Column Ratio
+- [x] Adjust font size of a section - half credit
+- [x] Adjust Column Ratio see `geometry`
+- [ ] Reveiw font sizes in `documentclass`
 - [ ] Replace Icons
 - [ ] Move Location/Date alignment (left/right align)
 
