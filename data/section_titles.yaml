@@ -3,6 +3,9 @@ software-developer:
   column_1_row_1: "Experience"
   column_2_row_0: "Projects"
   column_2_row_1: "Technical Stack"
+  column_2_row_1_heading_0: "Languages"
+  column_2_row_1_heading_1: "Infrastructure & Cloud"
+  column_2_row_1_heading_2: "Cloud Platforms"
   column_2_row_2: "Education"
   column_3_row_3: "Certifications"
 
@@ -11,6 +14,9 @@ devops-engineer:
   column_1_row_1: "Experience"
   column_2_row_0: "Projects"
   column_2_row_1: "Tech Stack"
+  column_2_row_1_heading_0: "Languages"
+  column_2_row_1_heading_1: "Infrastructure & Cloud"
+  column_2_row_1_heading_2: "Cloud Platforms"
   column_2_row_2: "Education"
   column_3_row_3: "Certifications"
 
@@ -19,5 +25,8 @@ cloud-engineer:
   column_1_row_1: "Experience"
   column_2_row_0: "Projects"
   column_2_row_1: "Technical Stack"
+  column_2_row_1_heading_0: "Languages"
+  column_2_row_1_heading_1: "Infrastructure & Cloud"
+  column_2_row_1_heading_2: "Cloud Platforms"
   column_2_row_2: "Education"
   column_3_row_3: "Certifications"

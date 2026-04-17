@@ -176,22 +176,27 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
         if strength != strengths[3]:
             latex += "\\divider\n\n"
 
+    # Technical Stack
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
-    # TODO: remove hardcoded limits?
-
-    latex += "\\textbf{Languages}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Languages}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_0'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['programming_languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_1'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['devops']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Cloud Platforms}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Cloud Platforms}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_2'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['cloud_platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
@@ -324,21 +329,27 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
         if strength != strengths[-1]:
             latex += "\\divider\n\n"
 
-    # Tech Stack
+    # Technical Stack
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
-    latex += "\\textbf{Languages}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Languages}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_0'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['programming_languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_1'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['devops']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Cloud Platforms}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Cloud Platforms}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_2'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['cloud_platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
@@ -474,20 +485,25 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     # Technical Stack
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
-    # TODO: Extend format to other templates
-    latex += "\\textbf{Languages}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Languages}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_0'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['programming_languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_1'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['devops']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Cloud Platforms}\n\n"
+    # hardcoded if preferred
+    # latex += "\\textbf{Cloud Platforms}\n\n"
+    latex += f"\\textbf{{{escape_latex(section_titles['column_2_row_1_heading_2'])}}}\n\n"
     latex += "\n\\medskip\n"
     for skill in skills['cloud_platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
