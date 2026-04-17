@@ -22,10 +22,10 @@
 
 - [x] Task -> 🗒️ ~Software Engineer Template - fix divider on job~
 - [x] Task -> 🗒️ Devops Engineer Template - fix divider in projects
-- [ ] Task -> 🗒️ Software Engineer Template - Remove Title from About me
-- [ ] Task -> 🗒️ All - Update sub heading
+- [x] Task -> 🗒️ Software Engineer Template - Remove Title from About me
 
-- [ ] Task -> 🗒️ Move Education up Higher
+- [ ] Task -> 🗒️ All - Update sub heading
+- [ ] Task -> 🗒️ Move Education up Higher - feature branch
 
 - [x] Task -> 🗒️ Job Description - Slalom
 - [x] Task -> 🗒️ Job Description - AB

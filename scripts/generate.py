@@ -455,7 +455,7 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
 
     # Technical Stack
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
-    # TODO: generate these generically from keys?
+    # FIXME: generate these generically from keys or replace
     latex += "\\textbf{Languages}\n\n"
     for skill in skills['Programming Languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
