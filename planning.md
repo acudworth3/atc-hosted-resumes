@@ -20,6 +20,17 @@
 - [x] Task -> 🗒️ add section title note
 - [x] Task -> 🗒️ slash and burn
 
+- [ ] Task -> 🗒️ Software Engineer Template - fix divider on job
+- [ ] Task -> 🗒️ Software Engineer Template - Remove Title from About me
+- [ ] Task -> 🗒️ All - Update sub heading
+
+- [ ] Task -> 🗒️ Move Education up Higher
+
+- [ ] Task -> 🗒️ Job Description - Slalom
+- [ ] Task -> 🗒️ Job Description - AB
+- [x] Task -> 🗒️ Description - Projects
+- [ ] Task -> 🗒️ Description - Projects v2
+
 ### Resume
 
 - [ ] Task -> 🗒️ how to include meta data
