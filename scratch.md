@@ -1,50 +1,72 @@
-AB SLOP
+- title: "Senior Consultant - Platforms Engineering"
+  company: "Slalom"
+  location: "Miami Area, FL"
+  start_date: "07/2025"
+  end_date: "Present"
+  tags: ["devops", "cloud", development"]
+  achievements:
+  - "Acted as Tech Lead architecting AI proof of concepts for nuclear plant work management systems featuring LLM chat interface"
+  - "Adopted and presented on AI first development best practices including automated agent development continuous in the background"
 
-Legacy Modernization & Cloud Strategy: Spearheaded the end-to-end transformation of EOL legacy systems and licensed Oracle databases into modern, containerized Azure cloud architectures.
+  # - Something about FIGMA AI
 
-Full-Stack Technical Leadership: Led a 12-person agile team in developing scalable .NET APIs and web applications, supporting 500+ users across 12 global breweries.
+  # - "Operationalizing AI: Focused on bridging the gap between raw AI capabilities and site-specific needs, delivering CRUD-based interfaces that made complex data actionable for nuclear site operations."
 
-Enterprise DevOps & CI/CD: Orchestrated complex monorepo environments using Rush.js and GitHub Actions, managing 20+ projects with automated multi-environment deployment pipelines.
+  # - "Enterprise AI Readiness: Consulted on the technical and structural requirements for introducing generative AI into highly regulated environments, ensuring security and data integrity."
 
-Security & Infrastructure: Architected robust enterprise security models using Azure RBAC and App Registrations to enable secure, self-service capabilities for regional operations.
+  # - "Rapid Prototyping & Delivery: Accelerated organizational AI adoption by leading 3-month high-velocity development cycles, proving value and technical feasibility before full-scale rollout."
 
-Quality & Performance Engineering: Engineered comprehensive performance and post-deployment testing suites using K6 and DataDog to ensure high availability and REST API reliability.
+  # - "Stakeholder Alignment: Collaborated with site leadership to identify high-value AI use cases, translating complex nuclear work management requirements into intuitive, chat-driven digital tools."
 
-Operational Excellence: Directed large-scale repository migrations and infrastructure scaling initiatives without impacting development cycle times or production stability.
+- title: "Senior Software Engineer"
+  company: "Anheuser-Busch Inbnev"
+  location: "St. Louis, MO"
+  start_date: "10/2021"
+  end_date: "06/2025"
+  tags: ["devops", "development"]
+  achievements:
+  - "Lead DevOps engineer on 12 person agile team across 2 years"
+  - "Delivered greenfield brewing recipe modern application supporting 500+ users across 12 global breweries."
+  - "Replaced EOL applications with Azure hosted full stack web app"
+  - "Designed K6 based performance tests for REST APIs running daily"
+  - "Stood up 3 Azure environments including full build and release tooling"
 
-- SLALOM SLOP
+  # - "Quality & Performance Engineering: Engineered comprehensive performance and post-deployment testing suites using K6 and DataDog to ensure high availability and REST API reliability."
 
-Strategic AI Integration: Spearheaded the delivery of high-impact AI Proof of Concepts (PoCs), transforming traditional work management workflows into AI-augmented operational processes.
+  # - "Security & Infrastructure: Architected robust enterprise security models using Azure RBAC and App Registrations to enable secure, self-service capabilities for regional operations."
 
-Technical Leadership & Architecture: Acted as Tech Lead for cross-functional teams to architect and deploy full-stack React and PostgreSQL solutions featuring integrated LLM chat interfaces.
+  # - "Directed large-scale repository migrations and infrastructure scaling initiatives without impacting development cycle times or production stability."
 
-Operationalizing AI: Focused on bridging the gap between raw AI capabilities and site-specific needs, delivering CRUD-based interfaces that made complex data actionable for nuclear site operations.
+- title: "Business Process Enginer (Devops)"
+  company: "Master Card"
+  location: "O'Fallon, MO"
+  start_date: "10/2020"
+  end_date: "10/2021"
+  tags: ["devops", "cloud", "development"]
+  achievements:
+  - "IBM Mainframe to Pivotal Cloud Foundry file transfer infrastructure Migration L2 Support"
 
-Enterprise AI Readiness: Consulted on the technical and structural requirements for introducing generative AI into highly regulated environments, ensuring security and data integrity.
+- title: "Graduate Teaching Assistant"
+  company: "Georgia Tech College of Computing"
+  location: "Remote"
+  start_date: "01/2019"
+  end_date: "05/2022"
+  tags: ["devops", "cloud", "development"]
+  achievements:
+  - "CS 6340: Software Analysis - Office Hours, grading, design course work"
 
-Rapid Prototyping & Delivery: Accelerated organizational AI adoption by leading 3-month high-velocity development cycles, proving value and technical feasibility before full-scale rollout.
+- title: "Associate Product Manager"
+  company: "Walmart E-Commerce"
+  location: "San Bruno, CA"
+  start_date: "01/2017"
+  end_date: "10/2018"
+  tags: ["devops", "cloud", "development"]
+  achievements:
 
-Stakeholder Alignment: Collaborated with site leadership to identify high-value AI use cases, translating complex nuclear work management requirements into intuitive, chat-driven digital tools.
-
-# TODO: move this into a separate file
-
-# This is the about me
-
-- title: "Senior Full Stack Engineer"
-  # TODO: rewrite the description
-  description: "I build software. I build it good. This resume was built with software."
-  tags: ["development", "cloud"]
-
-## Begin Projects Section
-
-- title: "Enterprise Brewery Recipe Application"
-  description: "Led the DevOps strategy and conducted full-stack development resulting in decommissioning of 6 legacy VBA applications. Decomposed functionality into a containerized Azure ecosystem at Anheuser-Busch Inbev."
-  tags: ["development"]
-
-- title: "Cloud Migration - Anheuser Busch Pricing System"
-  description: "Acted as lead infrastructure engineer replacing an Oracle Express pricing application for beer pricing compliance and updates. Used in 50 states and > 2900 counties. Decommissioned legacy Oracle Express application with modern full stack application."
-  tags: ["devops"]
-
-- title: "Work Management AI Integration"
-  description: "Nuclear power plant work management modernization proof of concept. Architect ed and AI interface to surface parts, manuals, and recommendation on recurring maintenance activities."
-  tags: ["devops", "cloud"]
+- title: "Software Consultant (Warehouse)"
+  company: "Manhattan Associates"
+  location: "Atlanta, GA"
+  start_date: "08/2014"
+  end_date: "12/2016"
+  tags: ["devops", "cloud", "development"]
+  achievements:
