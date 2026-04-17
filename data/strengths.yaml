@@ -1,7 +1,8 @@
 # TODO: move this into a separate file
 # This is the about me
 - title: "Senior Full Stack Engineer"
-  description: "Only six to eight words. Only six to eight words."
+  # TODO: rewreite the description
+  description: "I build software. I build it good. This resume was built with sofware."
   tags: ["development", "cloud"]
 
 ## Begin Projects Section

@@ -21,6 +21,7 @@
 - [x] Task -> 🗒️ slash and burn
 
 - [ ] Task -> 🗒️ Software Engineer Template - fix divider on job
+- [ ] Task -> 🗒️ Devops Engineer Template - fix divider in projects
 - [ ] Task -> 🗒️ Software Engineer Template - Remove Title from About me
 - [ ] Task -> 🗒️ All - Update sub heading
 
