@@ -4,7 +4,7 @@ Languages:
   - "French (Conversational)"
 
 # TODO: add more sections and generate from keys generically
-Programming Languages:
+programming_languages:
   - "Python"
   - "JavaScript/TypeScript"
   - "C#"
@@ -13,7 +13,7 @@ Programming Languages:
   - "SQL"
   - "lua"
 
-DevOps and Cloud Technologies:
+devops:
   - "Docker"
   - "Terraform"
   - "GitHub Actions"
@@ -21,7 +21,7 @@ DevOps and Cloud Technologies:
   - "Splunk"
   - "Sonar Cloud"
 
-Cloud Platforms:
+cloud_platforms:
   - "AWS"
   - "Azure"
 

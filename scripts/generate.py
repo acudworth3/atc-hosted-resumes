@@ -181,19 +181,19 @@ def generate_software_developer(data: Dict[str, Any]) -> str:
 
     latex += "\\textbf{Languages}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['Programming Languages']:
+    for skill in skills['programming_languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
     latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['DevOps and Cloud Technologies']:
+    for skill in skills['devops']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
     latex += "\\textbf{Cloud Platforms}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['Cloud Platforms']:
+    for skill in skills['cloud_platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
     
     # Education
@@ -328,19 +328,19 @@ def generate_devops_engineer(data: Dict[str, Any]) -> str:
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
     latex += "\\textbf{Languages}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['Programming Languages']:
+    for skill in skills['programming_languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
     latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['DevOps and Cloud Technologies']:
+    for skill in skills['devops']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
     latex += "\\textbf{Cloud Platforms}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['Cloud Platforms']:
+    for skill in skills['cloud_platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
@@ -477,19 +477,19 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     # TODO: Extend format to other templates
     latex += "\\textbf{Languages}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['Programming Languages']:
+    for skill in skills['programming_languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
     latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['DevOps and Cloud Technologies']:
+    for skill in skills['devops']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
     latex += "\\textbf{Cloud Platforms}\n\n"
     latex += "\n\\medskip\n"
-    for skill in skills['Cloud Platforms']:
+    for skill in skills['cloud_platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     # Education
