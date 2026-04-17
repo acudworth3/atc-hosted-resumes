@@ -27,8 +27,7 @@
 - [x] Task -> 🗒️ Job Description - Slalom
 - [x] Task -> 🗒️ Job Description - AB
 - [x] Task -> 🗒️ Description - Projects
-
-- [ ] Task -> 🗒️ Decide which Tech Stack format to adopt
+- [x] Task -> 🗒️ Decide which Tech Stack format to adopt
 
 - [ ] Task -> 🗒️ Move Education up Higher - feature branch
 - [ ] Task -> 🗒️ Description - Projects v2
