@@ -1,15 +1,20 @@
-- title: "Placer Holder 1"
-  description: "Nulla sollicitudin felis vel ultricies semper.Duis non convallis mauris. Suspendisse eleifend nisi in orci feugiat vehicula. Integer vehicula lacus vitae dictum egestas."
+# TODO: move this into a separate file
+# This is the about me
+- title: "Senior Full Stack Engineer"
+  description: "Only six to eight words. Only six to eight words."
+  tags: ["development", "cloud"]
+
+## Begin Projects Section
+- title: "Enterprise Brewery Recipe Application"
+  description: "Led the DevOps strategy and conducted full-stack development  resulting in decommissioning of 6 legacy VBA applications. Decomposed functionality intto a containerized Azure ecosystem at Anheuser-Busch Inbev."
+  # description: "Led the DevOps strategy and conducted full-stack development  resulting in decommissioning of six legacy VBA applications. Migrated systems to a containerized Azure ecosystem. ensure reliability for 500+ users across 12 breweries. Desgined Azure RBAC and App Registrations to establish a secure, self-service security model."
   tags: ["development"]
 
-- title: "Placer Holder 2"
-  description: "Nulla sollicitudin felis vel ultricies semper.Duis non convallis mauris. Suspendisse eleifend nisi in orci feugiat vehicula. Integer vehicula lacus vitae dictum egestas."
-  tags: ["devops", "cloud"]
-
-- title: "Placer Holder 3"
-  description: "Nulla sollicitudin felis vel ultricies semper.Duis non convallis mauris. Suspendisse eleifend nisi in orci feugiat vehicula. Integer vehicula lacus vitae dictum egestas."
+  # These are the project
+- title: "Cloud Migration - Anheuser Busch Pricing System"
+  description: "Acted as lead infrastructure engineer replacing an Oracle Express pricing application for beer pricing compliance and updates in 50 states and > 2900 counties. Decomissioned legacy Oracle Express application with modern full stack application."
   tags: ["devops"]
 
-- title: "Placer Holder 4"
-  description: "Nulla sollicitudin felis vel ultricies semper.Duis non convallis mauris. Suspendisse eleifend nisi in orci feugiat vehicula. Integer vehicula lacus vitae dictum egestas."
-  tags: ["development", "cloud"]
+- title: "Work Management AI Intergration"
+  description: "Nuclear power plant work management modernization proof of concept. Architected and AI interface to surface parts, manuals, and reccomendation on recurring maintenance activities."
+  tags: ["devops", "cloud"]
