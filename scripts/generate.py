@@ -456,17 +456,17 @@ def generate_cloud_engineer(data: Dict[str, Any]) -> str:
     # Technical Stack
     latex += f"\\cvsection{{{escape_latex(section_titles['column_2_row_1'])}}}\n\n"
     # FIXME: generate these generically from keys or replace
-    latex += "\\textbf{Languages}\n\n"
+    # latex += "\\textbf{Languages}\n\n"
     for skill in skills['Programming Languages']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
+    # latex += "\\textbf{Infrastructure \\& Cloud}\n\n"
     for skill in skills['DevOps and Cloud Technologies']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 
     latex += "\n\\divider\\smallskip\n\n"
-    latex += "\\textbf{Cloud Platforms}\n\n"
+    # latex += "\\textbf{Cloud Platforms}\n\n"
     for skill in skills['Cloud Platforms']:
         latex += f"\\cvtag{{{escape_latex(skill)}}}\n"
 

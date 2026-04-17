@@ -24,13 +24,13 @@
 - [x] Task -> 🗒️ Devops Engineer Template - fix divider in projects
 - [x] Task -> 🗒️ Software Engineer Template - Remove Title from About me
 
-- [ ] Task -> 🗒️ All - Update sub heading
-- [ ] Task -> 🗒️ Move Education up Higher - feature branch
-
 - [x] Task -> 🗒️ Job Description - Slalom
 - [x] Task -> 🗒️ Job Description - AB
 - [x] Task -> 🗒️ Description - Projects
 
+- [ ] Task -> 🗒️ Decide which Tech Stack format to adopt
+
+- [ ] Task -> 🗒️ Move Education up Higher - feature branch
 - [ ] Task -> 🗒️ Description - Projects v2
 - [ ] Task -> 🗒️ Job Description - Slalom v2
 - [ ] Task -> 🗒️ Job Description - AB v2
