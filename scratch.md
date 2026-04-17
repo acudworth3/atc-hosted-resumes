@@ -25,3 +25,26 @@ Enterprise AI Readiness: Consulted on the technical and structural requirements 
 Rapid Prototyping & Delivery: Accelerated organizational AI adoption by leading 3-month high-velocity development cycles, proving value and technical feasibility before full-scale rollout.
 
 Stakeholder Alignment: Collaborated with site leadership to identify high-value AI use cases, translating complex nuclear work management requirements into intuitive, chat-driven digital tools.
+
+# TODO: move this into a separate file
+
+# This is the about me
+
+- title: "Senior Full Stack Engineer"
+  # TODO: rewrite the description
+  description: "I build software. I build it good. This resume was built with software."
+  tags: ["development", "cloud"]
+
+## Begin Projects Section
+
+- title: "Enterprise Brewery Recipe Application"
+  description: "Led the DevOps strategy and conducted full-stack development resulting in decommissioning of 6 legacy VBA applications. Decomposed functionality into a containerized Azure ecosystem at Anheuser-Busch Inbev."
+  tags: ["development"]
+
+- title: "Cloud Migration - Anheuser Busch Pricing System"
+  description: "Acted as lead infrastructure engineer replacing an Oracle Express pricing application for beer pricing compliance and updates. Used in 50 states and > 2900 counties. Decommissioned legacy Oracle Express application with modern full stack application."
+  tags: ["devops"]
+
+- title: "Work Management AI Integration"
+  description: "Nuclear power plant work management modernization proof of concept. Architect ed and AI interface to surface parts, manuals, and recommendation on recurring maintenance activities."
+  tags: ["devops", "cloud"]
